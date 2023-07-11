@@ -31,15 +31,12 @@ func NewLogger(p string) *Logger {
 func (l *Logger) Debug(v ...interface{}) {
 	l.debug.Println(v...)
 }
-
 func (l *Logger) Info(v ...interface{}) {
 	l.info.Println(v...)
 }
-
 func (l *Logger) Warn(v ...interface{}) {
 	l.warning.Println(v...)
 }
-
 func (l *Logger) Error(v ...interface{}) {
 	l.err.Println(v...)
 }
@@ -48,15 +45,12 @@ func (l *Logger) Error(v ...interface{}) {
 func (l *Logger) Debugf(format string, v ...interface{}) {
 	l.debug.Printf(format, v...)
 }
-
 func (l *Logger) Infof(format string, v ...interface{}) {
 	l.info.Printf(format, v...)
 }
-
 func (l *Logger) Warnf(format string, v ...interface{}) {
 	l.warning.Printf(format, v...)
 }
-
 func (l *Logger) Errorf(format string, v ...interface{}) {
 	l.err.Printf(format, v...)
 }
