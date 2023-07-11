@@ -13,6 +13,5 @@ func initializeRoutes(r *gin.Engine) {
 		v1.POST("/openings", handler.CreateOpeningHandler)
 		v1.PUT("/openings/:id", handler.UpdateOpeningHandler)
 		v1.DELETE("/openings/:id", handler.DeleteOpeningHandler)
-
 	}
 }
